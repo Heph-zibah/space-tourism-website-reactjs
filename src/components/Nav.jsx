@@ -22,6 +22,18 @@ const Nav = () => {
         </ul>
         <img src={menuOpen} alt="hamburger" />
     </nav>
+    <div className="mobile__nav">
+        <img src={menuClose} alt="close icon" />
+        <ul>
+            {navLinks.map((item) => {
+                const {id, num, url,link} = item
+                return <NavLink to={url} key={id} activeClassName="active">
+                    <p>{num}
+                    {link}</p>
+                </NavLink>
+            })}
+        </ul>
+    </div>
    </>
   )
 }

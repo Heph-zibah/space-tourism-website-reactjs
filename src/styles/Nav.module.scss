@@ -1,0 +1,150 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo {
+    padding-left: 24px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    ul {
+        display: none;
+    }
+    .menu__open{
+        padding: 10px;
+    }
+    .menu__open img {
+        width: 30px;
+    }
+}
+
+.mobile__nav {
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.781);
+    transition: transform 500ms ease-in-out;
+    
+    .mobile__div {
+        padding-top: 24px;
+    }
+    .menu__close {
+        display: flex;
+       justify-content: flex-end;
+       padding: 10px 34px 10px 10px;
+    }
+    .menu__close img {
+        width: 30px;
+    }
+    ul {
+        padding-top: 30px;
+    }
+    li {
+        margin-top: 20px;
+        font-weight:400;
+        padding: 20px 0 20px 32px;
+    }
+    li:hover {
+        font-weight: 600;
+        background-color: $text-color-primary;
+        color: black;
+    }
+    a{
+        color: $text-color-secondary;
+        font-size: 1.13rem;
+    }
+    a:hover {
+        color: black;
+    }
+    a.active {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    span{
+        margin-right: 20px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width:601px) {
+    .nav__logo {
+        padding-left: 48px;
+        padding-top: 30px;
+    }
+    nav {
+        padding: 1.5rem 1rem  0 0;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 0 40px;
+            background-color: rgba(0, 0, 0, 0.377);
+            padding-left: 20px;
+        }
+        li {
+            padding: 30px 0px;
+            transition: .5s;
+        }
+        li:hover {
+            border-bottom:3px solid rgba(255, 255, 255, 0.336);
+            
+        }
+        .active {
+            border-bottom: 4px solid white;
+        }
+        a {
+            color: $text-color-primary;
+            
+        }
+        span {
+            display: none;
+        }
+        .menu__open{
+            display: none;
+        }
+       
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .nav__logo {
+        padding-left: 120px;
+        padding-top: 30px;
+    }
+    .nav__line {
+        border-top: 1px solid hsla(0,0%,100%,.25);
+        margin-left: 64px;
+        margin-right: -48px;
+        width: 25%;
+        z-index: 1;
+        position:absolute;
+        left: 10%;
+    }
+    nav {
+        padding: 1.5rem 0rem 0 0;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 0 100px;
+            padding: 0 5rem;
+            background-color: rgba(0, 0, 0, 0.377);
+        }
+        span {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+       
+    }
+}

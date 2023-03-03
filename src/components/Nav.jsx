@@ -20,7 +20,7 @@ const Nav = () => {
             <ul>
                 {navLinks.map((item) => {
                     const {id, num, url,link} = item
-                    return <li key={id} onClick={() => setActive(item)} className={`list-item ${active == item && "active"}`}>
+                    return <li key={id} onClick={() => setActive(item)} className={`list-item ${active === item && "active"}`}>
                         <Link to={url}>
                         <span>{num}</span>{link}
                         </Link>

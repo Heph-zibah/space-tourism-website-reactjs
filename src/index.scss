@@ -48,18 +48,19 @@ h3 {
     color: $text-color-primary;
 }
 
-main {
+.container {
     padding: 100px 24px 0;
 }
 
 @media screen and (min-width:601px) {
-    main{
-        padding: 100px 48px 0;
+    .container{
+        padding: 150px 48px 0;
     }
 }
 
-@media screen and (min-width:1024px) {
-    main{
-        padding: 100px 120px 0;
+@media screen and (min-width:1200px) {
+    .container{
+        padding: 200px 120px 0;
     }
 }
+

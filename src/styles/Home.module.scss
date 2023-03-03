@@ -1,0 +1,26 @@
+.home__container {
+    background: url('../starter-code/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (min-width:601px) {
+    .home__container {
+        background: url('../starter-code/assets/home/background-home-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+@media screen and (min-width:1200px) {
+    .home__container {
+        background: url('../starter-code/assets/home/background-home-desktop.jpg');
+        background-repeat: no-repeat;
+        // background-position: bottom;
+        background-size: cover;
+        height: 100vh;
+    }
+}

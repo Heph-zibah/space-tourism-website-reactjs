@@ -2,6 +2,9 @@
 @import './styles/variables';
 @import './styles/Nav.module.scss';
 @import './styles/Home.module.scss';
+@import './styles/Destination.module.scss';
+@import './styles//Crew.module.scss';
+@import './styles//Technology.module.scss';
 %style-shared {
     color: $text-color-primary;
     font-family: $font-family-secondary;

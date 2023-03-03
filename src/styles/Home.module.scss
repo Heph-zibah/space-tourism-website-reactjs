@@ -4,6 +4,7 @@
     background-position: bottom;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 .home__wrapper {
@@ -16,10 +17,10 @@
         text-align: center;
         padding-top: 10px;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 18px;
         h1 {
             
-            font-size: 110px;
+            font-size: 80px;
             font-weight: 400;
         }
         p {

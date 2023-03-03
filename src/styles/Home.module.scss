@@ -6,9 +6,59 @@
     height: 100vh;
 }
 
-.homee__wrapper {
-    
+.home__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .home__info {
+        text-align: center;
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        h1 {
+            
+            font-size: 110px;
+            font-weight: 400;
+        }
+        p {
+            text-transform:lowercase;
+            
+        }
+    }
+    .home__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 274px;
+        height: 274px;
+        position: relative;
+        z-index: 5;
+        border-radius: 50%;
+        background-color: #fff;
+        color:hsl(230 35% 7%);
+        text-transform: uppercase;
+        font-family: $font-family-neutral;
+        font-weight: 400;
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    .home__btn::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 0px;
+        width: 0px;
+        z-index: 3;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: opacity 500ms linear, transform 750ms ease-in-out;
+    }
 }
+
 
 @media screen and (min-width:601px) {
     .home__container {
@@ -18,6 +68,38 @@
         background-size: cover;
         height: 100vh;
     }
+    .home__wrapper{
+        .home__info {
+            text-align: center;
+            padding-top: 0;
+            font-size: 25px;
+            h1 {
+                font-size: 120px;
+            }
+            p {
+                text-transform:lowercase;
+                
+            }
+        }
+   }
+}
+
+@media screen and (min-width:901px) {
+    .home__wrapper{
+        .home__info {
+            text-align: center;
+            padding-top: 0;
+            font-size: 28px;
+            h1 {
+                font-size: 140px;
+            }
+            p {
+                text-transform:lowercase;
+                padding: 0 20px;
+                
+            }
+        }
+   }
 }
 @media screen and (min-width:1200px) {
     .home__container {
@@ -26,5 +108,31 @@
         background-position: bottom;
         background-size: cover;
         height: 100vh;
+    }
+    .home__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        letter-spacing: 3px;
+        .home__info {
+            text-align: start;
+            flex: 4;
+            font-size: 24px;
+            h1 {
+                font-size: 150px;
+            }
+            p{
+                padding-right: 100px;
+                line-height: 32px;
+                
+            }
+        }
+        .home__btn--div{
+            flex: 2;
+            display: flex;
+            
+           justify-content: flex-end;
+        }
+        
     }
 }

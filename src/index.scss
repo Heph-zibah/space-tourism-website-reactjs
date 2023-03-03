@@ -14,6 +14,9 @@
     padding:0;
     box-sizing: border-box;
 }
+body {
+font-size: 1.13rem;
+}
 
 a,button {
     cursor: pointer;
@@ -37,9 +40,9 @@ li {
 }
 p {
     @extend %style-shared;
-    font-size: 1.13rem;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 22px;
+    font-family: $font-family-neutral;
 }
 h1 {
     color: $text-color-secondary;
@@ -54,7 +57,7 @@ h3 {
 
 @media screen and (min-width:601px) {
     .container{
-        padding: 150px 48px 0;
+        padding: 130px 48px 0;
     }
 }
 

@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <>
-      <main className='home__container'>
+      <main className='home__container container'>
         <div className='home__wrapper'>
           <div className='home-info'>
             <h3>So, you want to travel to</h3>

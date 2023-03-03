@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Destination = () => {
+const Destination = ({data}) => {
   return (
-    <div>Destination</div>
+    <>
+       <main className='destination__container container'>
+        <h3>01 Pick your destination</h3>
+       </main>
+    </>
   )
 }
 

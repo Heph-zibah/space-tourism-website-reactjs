@@ -5,7 +5,8 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-- Desktop: 1440px
+- Tablet: 601px
+- Desktop: 1200px
 
 ## Colors
 
@@ -24,7 +25,7 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed)
-- Weights: 300, 400, 700
+- Weights: 300, 600, 400, 700
 - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
 - Weights: 300, 400, 700
 - Family: [Bellefair](https://fonts.google.com/specimen/Bellefair)

@@ -73,7 +73,7 @@ const proudOfThisFunc = () => {
 ### Useful resources
 
 - [Freaky Jolly](https://www.freakyjolly.com/react-add-active-class-on-selected-item-on-dynamic-list/) - This helped me for setting active class. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Geek for Geeks](https://www.geeksforgeeks.org/how-to-create-typewriter-effect-in-reactjs/) - This is an amazing article which helped me finally understand the typewriter effect. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

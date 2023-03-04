@@ -6,19 +6,19 @@ export const navLinks = [
         link: 'home'
     },
     {
-        id:1,
+        id:2,
         num:'01',
         url:'/destination',
         link: 'destination'
     },
     {
-        id:1,
+        id:3,
         num:'02',
         url:'/crew',
         link: 'crew'
     },
     {
-        id:1,
+        id:4,
         num: '03',
         url:'/technology',
         link: 'technology'

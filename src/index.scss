@@ -52,6 +52,10 @@ h3 {
     color: $text-color-primary;
 }
 
+.active {
+    border-bottom: 4px solid white;
+}
+
 .container {
     padding: 100px 24px 70px;
 }
@@ -64,7 +68,7 @@ h3 {
 
 @media screen and (min-width:1200px) {
     .container{
-        padding: 180px 120px 0;
+        padding: 150px 120px 100px;
     }
 }
 

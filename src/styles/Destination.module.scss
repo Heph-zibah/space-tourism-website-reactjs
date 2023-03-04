@@ -5,10 +5,21 @@
     background-position: bottom;
     // height: 100vh;
     width: 100%;
+    h3 {
+        text-align: center;
+        color: $text-color-secondary;
+        text-transform: uppercase;
+        font-family: $font-family-neutral;
+        font-weight: 400;
+        span{
+            color: $text-color-primary;
+            margin-right: 20px;
+        }
+    }
 }
 
 .destination__wrapper {
-
+margin-top: 30px;
     .destination__img {
         width: 100%;   
     }
@@ -20,22 +31,55 @@
             display: flex;
             align-items: center;
             gap: 30px;
-        }
-        li{
-            button {
-                background: 0;
-                color: $text-color-primary;
-                text-transform: uppercase;
-                font-family: $font-family-primary;
-                font-size: 24px;
-                padding: 20px 0px;
-                transition: .5s;
+            li{
+                button {
+                    background: 0;
+                    color: $text-color-primary;
+                    text-transform: uppercase;
+                    font-family: $font-family-primary;
+                    font-size: 24px;
+                    padding: 20px 0px;
+                    transition: .5s;
+                }
+                button:hover {
+                    border-bottom:4px solid rgba(255, 255, 255, 0.336);
+                    
+                }
             }
-            button:hover {
-                border-bottom:4px solid rgba(255, 255, 255, 0.336);
+        }
+
+        .destination__info {
+            text-align: center;
+            .destination__desc {
+                margin: 20px 0;
                 
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 70px;
+                }
+                p {
+                    font-size: 20px;
+                    font-family: $font-family-secondary;
+                    line-height: 1.5;
+                    font-weight: 400;
+                }
+            }
+            .destination__stats {
+                border-top: 1px solid $text-color-primary;
+                padding-top: 30px;
+                text-transform: uppercase;
+                font-family: $font-family-secondary;
+                p{
+                    font-size: 24px;
+                }
+                h4 {
+                    color: $text-color-secondary;
+                font-size: 40px;
+                font-weight: 400;
+                }
             }
         }
+        
     }
    
 }
@@ -63,6 +107,10 @@
         background-position: bottom;
         // height: 100vh;
         width: 100%;
+        h3 {
+            text-align: start;
+            font-size: 35px;
+        }
     }
 
     .destination__wrapper {
@@ -73,6 +121,36 @@
         .destination__img  img{
             // flex: 3; 
             width: 500px;  
+        }
+        .destination__content {
+            .destination__info {
+                text-align: start;
+                .destination__desc {
+                    margin-top: 30px;
+                    
+                    h1 {
+                        text-transform: uppercase;
+                        font-size: 100px;
+                    }
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                .destination__stats {
+                    display: flex;
+                    align-items: center;
+                    gap: 100px; 
+                    p{
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    h4 {
+                        color: $text-color-secondary;
+                    font-size: 40px;
+                    font-weight: 400;
+                    }
+                }
+            }
         }
     }
 }

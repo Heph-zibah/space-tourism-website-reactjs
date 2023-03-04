@@ -6,7 +6,6 @@ import Technology from './pages/Technology'
 import './index.scss'
 import Nav from "./components/Nav";
 
-// const data = require('./starter-code/data.json')
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/destination" element={<Destination/>} />
+        <Route path="/destination" element={<Destination/>}/>
         <Route path="/crew" element={<Crew/>} />
         <Route path="/technology" element={<Technology/>} />
       </Routes>

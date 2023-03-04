@@ -1,19 +1,26 @@
+// google font
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;700&family=Bellefair&display=swap');
+
+// importing modules
 @import './styles/variables';
 @import './styles/Nav.module.scss';
 @import './styles/Home.module.scss';
 @import './styles/Destination.module.scss';
 @import './styles//Crew.module.scss';
 @import './styles//Technology.module.scss';
+
+// reset
 %style-shared {
     color: $text-color-primary;
     font-family: $font-family-secondary;
   }
+
 * {
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
+
 body {
     font-size: 1.13rem;
     width: 100%;
@@ -54,6 +61,7 @@ h3 {
 
 .active {
     border-bottom: 4px solid white;
+    font-weight: 700;
 }
 
 .container {
@@ -62,7 +70,7 @@ h3 {
 
 @media screen and (min-width:601px) {
     .container{
-        padding: 130px 48px 0;
+        padding: 150px 48px 50px;
     }
 }
 

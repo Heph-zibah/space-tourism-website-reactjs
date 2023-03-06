@@ -42,12 +42,14 @@ const Technology = () => {
           </div>
           <div className="tect__content">
             <div className="tech__links">
-              
+              {data.technology.map((tech, index) => {
+                return <button key={index} className={`crew__links ${active === index && 'active'}`} onClick={(e) => `${handleClick(e, index), setActive={tech}}`}>{index+1}</button>
+              })}
             </div>
             <div className="tech__info">
-              <h6></h6>
-              <h1></h1>
-              <p></p>
+              <h6>the terminology...</h6>
+              <h1>{tech.name}</h1>
+              <p>{tech.description}</p>
             </div>
           </div>
         </div>

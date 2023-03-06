@@ -53,8 +53,8 @@ const Crew = () => {
             {/* clickable buttons: mobile*/}
             <div className="crew__links mobile">
               {data.crew.map( (isCrew, index) => {
-                return <button key={index} className={`crew__link ${active === index && "active"}`} 
-                  onClick={(e) => handleClick(e, index)}></button>
+                return <button key={index} className={`crew__link ${active === index && "active"}` } 
+                onClick={(e) => `${handleClick(e, index), setActive={isCrew}}`}></button>
               })}
             </div>
 
@@ -68,7 +68,7 @@ const Crew = () => {
                 <div className="crew__links desktop">
               {data.crew.map( (isCrew, index) => {
                 return <button key={index} className={`crew__link ${active === index && "active"}`} 
-                  onClick={(e) => handleClick(e, index)}></button>
+                onClick={(e) => `${handleClick(e, index), setActive={isCrew}}`}></button>
               })}
             </div>
               </div>

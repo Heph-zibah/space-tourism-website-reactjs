@@ -70,6 +70,9 @@ const proudOfThisFunc = () => {
 ```
 
 ### Continued development
+- Mapping arrays and objects
+- React router
+
 ### Useful resources
 
 - [Freaky Jolly](https://www.freakyjolly.com/react-add-active-class-on-selected-item-on-dynamic-list/) - This helped me for setting active class. I really liked this pattern and will use it going forward.
@@ -83,3 +86,4 @@ const proudOfThisFunc = () => {
 
 
 ## Acknowledgments
+I will love to aclnowledge [gcarter89](https://github.com/gcarter89/space-tourism-website/blob/main/src/Pages/Crew.js) on Giithub whose project gave mme an insight on how to go about this project

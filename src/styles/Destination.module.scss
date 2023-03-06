@@ -5,17 +5,7 @@
     background-size: cover;
     background-position: bottom;
     width: 100%;
-    h3 {
-        text-align: center;
-        color: $text-color-secondary;
-        text-transform: uppercase;
-        font-family: $font-family-neutral;
-        font-weight: 400;
-        span{
-            color: $text-color-primary;
-            margin-right: 20px;
-        }
-    }
+    
 }
 
 .destination__wrapper {
@@ -132,16 +122,9 @@ margin-top: 30px;
 
 // SMALL LAPTOP
 @media screen and (min-width:901px){
-    .destination__container {
-        h3 {
-            text-align: start;
-            font-size: 35px;
-        }
-    }
     .destination__wrapper {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
         .destination__content {
             margin-top: 0;
             ul {
@@ -167,7 +150,6 @@ margin-top: 30px;
             }
         }
     }
-
 }
 
 

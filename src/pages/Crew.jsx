@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import crew1 from '../starter-code/assets/crew/image-douglas-hurley.webp'
-import crew2 from '../starter-code/assets/crew/image-douglas-hurley.webp'
-import crew3 from '../starter-code/assets/crew/image-victor-glover.png'
+import crew2 from '../starter-code/assets/crew/image-mark-shuttleworth.webp'
+import crew3 from '../starter-code/assets/crew/image-victor-glover.webp'
 import crew4 from '../starter-code/assets/crew/image-anousheh-ansari.webp'
 
 const data = require('../starter-code/data.json')
@@ -10,25 +10,27 @@ const Crew = () => {
 
   const [active, setActive] = useState(null)
   const [image, setImage] = useState(crew1)
-  const [crew, setCrew] = useState(data.crew[0])
+  const [isCrew, setIsCrew] = useState(data.crew[0])
 
   function handleClick(e, index) {
-    e.preventDefault(e)
-    setActive(data.crew[index]);
-    setCrew(data.crew[index])
+    e.preventDefault()
+    setIsCrew(data.crew[index])
+    setActive(index);
+    
 
-    switch(data.crew[index].name) {
-      case 'crew1':
+    switch(index) {
+      case 0:
         setImage(crew1)
         break;
-      case 'crew2':
+      case 1:
         setImage(crew2)
         break;
-      case 'crew3':
+      case 2:
         setImage(crew3)
         break;
-        case 'crew4':
+        case 3:
           setImage(crew4)
+
           default:
             break;
     }
@@ -41,22 +43,22 @@ const Crew = () => {
         <div className="crew__wrapper">
 
           <div className="crew__img">
-            <img src={crew1} alt="avatar" />
+            <img src={image} alt="avatar" />
           </div>
 
-          <div className="destination__content">
+          <div className="crew__content">
             <div className="crew__links">
-              {data.crew.map((index, crew) => {
-                <button key={index} className={`list-item ${active === index && "active"}`} 
+              {data.crew.map( (isCrew, index) => {
+                return <button key={index} className={`crew__link ${active === index && "active"}`} 
                   onClick={(e) => handleClick(e, index)}></button>
               })}
             </div>
 
             <div className="crew__info">
               <div className="crew__desc">
-                <h6>{crew.role}</h6>
-                <h2>{crew.name}</h2>
-                <p>{crew.bio}</p>
+                <h6>{isCrew.role}</h6>
+                <h2>{isCrew.name}</h2>
+                <p>{isCrew.bio}</p>
               </div>
             </div>
           </div>

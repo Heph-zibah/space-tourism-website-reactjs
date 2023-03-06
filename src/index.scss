@@ -56,7 +56,15 @@ h1 {
     color: $text-color-secondary;
 }
 h3 {
-    color: $text-color-primary;
+    text-align: center;
+    color: $text-color-secondary;
+    text-transform: uppercase;
+    font-family: $font-family-neutral;
+    font-weight: 400;
+    span{
+        color: $text-color-primary;
+        margin-right: 20px;
+    }
 }
 
 .active {
@@ -71,6 +79,12 @@ h3 {
 @media screen and (min-width:601px) {
     .container{
         padding: 150px 48px 50px;
+    }
+}
+@media screen and (min-width:901px) {
+    h3 {
+        text-align: start;
+        font-size: 35px;
     }
 }
 

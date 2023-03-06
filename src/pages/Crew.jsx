@@ -37,7 +37,7 @@ const Crew = () => {
   return (
     <>
       <main className='crew__container container'>
-        <h3><span>01</span> Pick your destination</h3>
+        <h3><span>02</span> Meet your crew</h3>
         <div className="crew__wrapper">
 
           <div className="crew__img">
@@ -50,6 +50,14 @@ const Crew = () => {
                 <button key={index} className={`list-item ${active === index && "active"}`} 
                   onClick={(e) => handleClick(e, index)}></button>
               })}
+            </div>
+
+            <div className="crew__info">
+              <div className="crew__desc">
+                <h6>{crew.role}</h6>
+                <h2>{crew.name}</h2>
+                <p>{crew.bio}</p>
+              </div>
             </div>
           </div>
 

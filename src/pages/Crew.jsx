@@ -47,20 +47,24 @@ const Crew = () => {
           </div>
 
           <div className="crew__content">
-            <div className="crew__links">
+            <div className="crew__links mobile">
               {data.crew.map( (isCrew, index) => {
                 return <button key={index} className={`crew__link ${active === index && "active"}`} 
                   onClick={(e) => handleClick(e, index)}></button>
               })}
             </div>
 
-            <div className="crew__info">
               <div className="crew__desc">
                 <h6>{isCrew.role}</h6>
                 <h2>{isCrew.name}</h2>
                 <p>{isCrew.bio}</p>
-              </div>
+                <div className="crew__links desktop">
+              {data.crew.map( (isCrew, index) => {
+                return <button key={index} className={`crew__link ${active === index && "active"}`} 
+                  onClick={(e) => handleClick(e, index)}></button>
+              })}
             </div>
+              </div>
           </div>
 
         </div>

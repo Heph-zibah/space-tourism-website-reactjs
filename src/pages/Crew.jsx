@@ -16,6 +16,22 @@ const Crew = () => {
     e.preventDefault(e)
     setActive(data.crew[index]);
     setCrew(data.crew[index])
+
+    switch(data.crew[index].name) {
+      case 'crew1':
+        setImage(crew1)
+        break;
+      case 'crew2':
+        setImage(crew2)
+        break;
+      case 'crew3':
+        setImage(crew3)
+        break;
+        case 'crew4':
+          setImage(crew4)
+          default:
+            break;
+    }
   }
 
   return (
@@ -26,6 +42,15 @@ const Crew = () => {
 
           <div className="crew__img">
             <img src={crew1} alt="avatar" />
+          </div>
+
+          <div className="destination__content">
+            <div className="crew__links">
+              {data.crew.map((index, crew) => {
+                <button key={index} className={`list-item ${active === index && "active"}`} 
+                  onClick={(e) => handleClick(e, index)}></button>
+              })}
+            </div>
           </div>
 
         </div>

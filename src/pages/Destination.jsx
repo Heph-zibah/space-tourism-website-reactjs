@@ -57,8 +57,11 @@ const Destination = () => {
             <ul>
               {/* iteration */}
               {data.destinations.map(( planet, index) => {
-                return <li key={index} className={`list-item ${active === index && "active"}`}>
-                  <button  onClick={(e) => `${handleClick(e, index), setActive={planet}}`}>
+                return <li
+                 key={index} 
+                 className={(active === index) ? `${'crew__link'} ${'active'}` : 'crew__link' }>
+                  <button  
+                  onClick={(e) => handleClick(e, index)}>
                     {planet.name}
                 </button>
                 </li>

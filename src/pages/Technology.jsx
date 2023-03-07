@@ -10,7 +10,7 @@ const data = require('../starter-code/data.json')
 
 const Technology = () => {
   const [active, setActive] = useState(null);
-  const [images, setImages] = useState([tech1Landscape, tech1Portrait])
+  const [images, setImages] = useState([tech1Portrait, tech1Landscape])
   const [tech, setTech] = useState(data.technology[0])
 
   function handleClick(e, index) {
@@ -19,14 +19,14 @@ const Technology = () => {
     setActive(index)
 
     switch(data.technology[index].name) {
-      case 'tech1':
-        setImages([tech1Landscape, tech1Portrait])
+      case 'Launch Vehicle':
+        setImages([tech1Portrait, tech1Landscape])
         break;
-      case 'tech2':
-        setImages([tech2Landscape, tech2Portrait])
+      case 'Space Port':
+        setImages([tech2Portrait, tech2Landscape])
         break;
-      case 'tech3':
-        setImages([tec3Landscape, tech3Portrait])
+      case 'Space Capsule':
+        setImages([tech3Portrait, tec3Landscape])
       
       default:
         break;
@@ -40,14 +40,19 @@ const Technology = () => {
         <div className="tech__wrapper">
           <div className="tech__img">
             <picture>
-              <source srcSet={images[0]} media="(max-width: 901px)"/>
-              <img src={images[1]} alt="space technology" />
+              <source srcSet={images[1]} media="(max-width: 901px)"/>
+              <img src={images[0]} alt="space technology" />
             </picture>
           </div>
           <div className="tech__content">
             <div className="tech__links">
               {data.technology.map((tech, index) => {
-                return <button key={index} className={`crew__link ${active === index && 'active'}`} onClick={(e) => `${handleClick(e, index), setActive={tech}}`}>{index+1}</button>
+                return <button 
+                key={index}
+                className={(active === index) ? `${'tech__link'} ${'active'}` : 'tech__link' }
+                onClick={(e) => handleClick(e, index)}>
+                  {index+1}
+                  </button>
               })}
             </div>
             <div className="tech__info">

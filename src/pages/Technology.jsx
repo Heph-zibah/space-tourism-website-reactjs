@@ -10,7 +10,7 @@ const data = require('../starter-code/data.json')
 
 const Technology = () => {
   const [active, setActive] = useState(null);
-  const [image, setImage] = useState([tech1Landscape, tech1Portrait])
+  const [images, setImages] = useState([tech1Landscape, tech1Portrait])
   const [tech, setTech] = useState(data.technology[0])
 
   function handleClick(e, index) {
@@ -20,13 +20,13 @@ const Technology = () => {
 
     switch(data.technology[index].name) {
       case 'tech1':
-        setImage([tech1Landscape, tech1Portrait])
+        setImages([tech1Landscape, tech1Portrait])
         break;
       case 'tech2':
-        setImage([tech2Landscape, tech2Portrait])
+        setImages([tech2Landscape, tech2Portrait])
         break;
       case 'tech3':
-        setImage([tec3Landscape, tech3Portrait])
+        setImages([tec3Landscape, tech3Portrait])
       
       default:
         break;
@@ -36,14 +36,18 @@ const Technology = () => {
   return (
     <>
       <div className="tech__container container">
-        <div className="tect__wrapper">
+        <h3><span>03</span> space launch 101</h3>
+        <div className="tech__wrapper">
           <div className="tech__img">
-
+            <picture>
+              <source srcSet={images[0]} media="(max-width: 901px)"/>
+              <img src={images[1]} alt="space technology" />
+            </picture>
           </div>
-          <div className="tect__content">
+          <div className="tech__content">
             <div className="tech__links">
               {data.technology.map((tech, index) => {
-                return <button key={index} className={`crew__links ${active === index && 'active'}`} onClick={(e) => `${handleClick(e, index), setActive={tech}}`}>{index+1}</button>
+                return <button key={index} className={`crew__link ${active === index && 'active'}`} onClick={(e) => `${handleClick(e, index), setActive={tech}}`}>{index+1}</button>
               })}
             </div>
             <div className="tech__info">

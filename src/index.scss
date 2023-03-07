@@ -82,6 +82,9 @@ h3 {
     }
 }
 @media screen and (min-width:901px) {
+    .container{
+        padding: 150px 48px 50px;
+    }
     h3 {
         text-align: start;
         font-size: 35px;

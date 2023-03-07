@@ -30,11 +30,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./src/starter-code/design/Space%20Tourism%20Webfull%20page.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub)
 - Live Site URL: [Live site URL](https://space-tourism-website-reactjs.vercel.app/)
 
 ## My process

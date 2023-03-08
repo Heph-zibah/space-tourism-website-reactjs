@@ -4,7 +4,7 @@ import tech1Landscape from '../starter-code/assets/technology/image-launch-vehic
 import tech2Portrait from '../starter-code/assets/technology/image-spaceport-portrait.jpg'
 import tech2Landscape from '../starter-code/assets/technology/image-spaceport-landscape.jpg'
 import tech3Portrait from '../starter-code/assets/technology/image-space-capsule-portrait.jpg'
-import tec3Landscape from '../starter-code/assets/technology/image-space-capsule-landscape.jpg'
+import tech3Landscape from '../starter-code/assets/technology/image-space-capsule-landscape.jpg'
 
 const data = require('../starter-code/data.json')
 
@@ -26,8 +26,8 @@ const Technology = () => {
         setImages([tech2Portrait, tech2Landscape])
         break;
       case 'Space Capsule':
-        setImages([tech3Portrait, tec3Landscape])
-      
+        setImages([tech3Portrait, tech3Landscape])
+        break
       default:
         break;
     }
